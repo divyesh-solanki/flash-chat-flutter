@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'login_screen.dart';
+
 class RegistrationScreen extends StatefulWidget {
+  static const id = 'registration_screen';
   @override
   _RegistrationScreenState createState() => _RegistrationScreenState();
 }
@@ -80,7 +83,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 child: MaterialButton(
                   onPressed: () {
                     //Implement registration functionality.
-                    Navigator.pushNamed(context, '/login');
+                    Navigator.pushNamed(context, LoginScreen.id);
                   },
                   minWidth: 200.0,
                   height: 42.0,
