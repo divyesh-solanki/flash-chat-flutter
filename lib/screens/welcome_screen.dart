@@ -27,6 +27,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   style: TextStyle(
                     fontSize: 45.0,
                     fontWeight: FontWeight.w900,
+                    color: Colors.black54,
                   ),
                 ),
               ],
@@ -43,6 +44,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 child: MaterialButton(
                   onPressed: () {
                     //Go to login screen.
+                    Navigator.pushNamed(context, '/login');
                   },
                   minWidth: 200.0,
                   height: 42.0,
@@ -61,6 +63,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 child: MaterialButton(
                   onPressed: () {
                     //Go to registration screen.
+                    Navigator.pushNamed(context, '/registeration');
                   },
                   minWidth: 200.0,
                   height: 42.0,

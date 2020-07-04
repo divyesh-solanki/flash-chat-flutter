@@ -80,6 +80,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 child: MaterialButton(
                   onPressed: () {
                     //Implement registration functionality.
+                    Navigator.pushNamed(context, '/login');
                   },
                   minWidth: 200.0,
                   height: 42.0,
